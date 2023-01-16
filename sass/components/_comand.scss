@@ -15,9 +15,13 @@
   }
 
   &__list {
-    display: flex;
+    // display: flex;
     list-style: none;
     padding-left: 0;
+
+    @media (min-width: 768px){
+      display: flex;
+    }
   }
 
   &__photos-block {
@@ -33,6 +37,10 @@
 
     &:nth-last-child(-n + 1) {
       margin-right: 0;
+    }
+
+    @media (max-width: 768px){
+      margin-bottom: 10px;
     }
   }
 }

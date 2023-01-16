@@ -80,5 +80,8 @@
     <symbol id="icon-check" viewBox="0 0 17 13">
     <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.26" d="M2.544 6.177l-0.089-0.085-1.343 1.273 4.733 4.515 9.944-9.486-1.335-1.273-8.609 8.205-3.3-3.148z"></path>
     </symbol>
+    <symbol id="icon-burger" viewBox="0 0 13 13">
+    <path d="M2.6 4.767v-0.867h7.8v0.867h-7.8zM2.6 6.933h7.8v-0.867h-7.8v0.867zM2.6 9.1h7.8v-0.867h-7.8v0.867z"></path>
+    </symbol>
     </defs>
 </svg>

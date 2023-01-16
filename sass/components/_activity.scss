@@ -1,4 +1,9 @@
 .activity {
+
+  @media(max-width: 768px){
+    display: none;
+  }
+  
   padding-bottom: 94px;
 
   &:nth-child(3n) {

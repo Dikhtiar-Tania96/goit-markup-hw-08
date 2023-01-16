@@ -25,15 +25,12 @@
         <nav class="header__navi">
           <a href="./" class="active">
             <span class="logo">Web</span
-            ><span class="logo-style">Studio</span></a
-          >
+            ><span class="logo-style">Studio</span></a>
           <ul class="header__list">
             <li class="header__link"><a href="./" class="navi-active">Студія</a></li>
-
             <li class="header__link">
               <a href="./portfolio.html" class="navi">Портфоліо</a>
             </li>
-
             <li class="header__link"><a href="" class="navi">Контакти</a></li>
           </ul>
         </nav>
@@ -45,7 +42,6 @@
               </svg>
               info@devstudio.com</a>
           </li>
-
           <li class="contact__link">
             <a href="tel:+380961111111" class="contact__link-active">
               <svg class="button-icon" width="10" height="16">
@@ -54,6 +50,11 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <button class="header__burger js-open-menu" type="button">
+          <svg width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -65,7 +66,6 @@
         </div>
       </section>
 
-      
       <section class="features">
         <div class="container">
           <h2 class="features__title">Наші особливості</h2>
@@ -489,6 +489,37 @@
     </div>
     </footer>
 
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__close js-close-menu" type="button">
+          <svg width="30px" height="30px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__link"><a href="./" class="navi">Студія</a></li>
+          <li class="mobile-menu__link"><a href="./portfolio.html" class="navi">Портфоліо</a></li>
+          <li class="mobile-menu__link"><a href="" class="navi">Контакти</a></li>
+        </ul>
+        <ul class="menu-contact">
+          <li>
+            <a href="tel:+380961111111"  class="menu-contact__tel">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com"  class="menu-contact__email">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu-socials">
+          <li><a href="" class="menu-socials__link">Instagram</a></li>
+          <li><a href="" class="menu-socials__link">Twitter</a></li>
+          <li><a href="" class="menu-socials__link">Facebook</a></li>
+          <li><a href="" class="menu-socials__link">LinkedIn</a> </li>
+        </ul>
+      </div>
+    </div>
+
+
     <div  class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
@@ -544,6 +575,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script> 
     <script src="./js/modal.js"></script> 
   </body>
 </html>
