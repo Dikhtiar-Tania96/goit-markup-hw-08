@@ -32,6 +32,8 @@
   }
 
   &__burger{
+    border: none;
+    background-color: transparent;
     @media (min-width: 768px){
       display: none;
     }
