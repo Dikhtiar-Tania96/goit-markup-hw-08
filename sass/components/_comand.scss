@@ -20,13 +20,12 @@
   }
 
   &__list {
-    // display: flex;
+    display: flex;
     list-style: none;
     padding-left: 0;
     margin-bottom: 20px;
 
     @media (min-width: 768px){
-      display: flex;
       // flex-basis: calc((100% - 30px) / 2);
     }
   }
@@ -46,9 +45,7 @@
     }
 
     @media (min-width: 768px){
-      display: flex;
-      // flex-basis: calc((100% - 30px) / 2);
-      margin-bottom: 10px;
+      flex-basis: calc((100% - 30px) / 2);
     }
   }
 
