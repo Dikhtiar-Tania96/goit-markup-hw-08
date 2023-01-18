@@ -410,13 +410,19 @@
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-}
-@media (min-width: 768px) {
-  .images-block {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .images-block__icon-block {
   display: -webkit-box;
@@ -434,12 +440,24 @@
   margin-bottom: 30px;
   background-color: var(--color-button);
 }
+@media (min-width: 768px) {
+  .images-block__icon-block {
+    width: 100%;
+  }
+}
 .images-block__icon {
   margin-right: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: inline-block;
   width: 270px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .images-block__icon {
+    display: block;
+    width: 354px;
+  }
 }
 .images-block__icon:nth-last-child(-n+1) {
   margin-right: 0;
@@ -930,13 +948,14 @@
 }
 @media (min-width: 480px) {
   .footer-navi {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -991,10 +1010,35 @@
   letter-spacing: 0.03em;
 }
 
-.footer-contact {
-  margin-top: 28px;
+@media (min-width: 480px) {
+  .footer-contact {
+    margin-top: 28px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .footer-contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
