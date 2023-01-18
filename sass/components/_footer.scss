@@ -8,8 +8,12 @@
     // display: flex;
     align-items: baseline;
 
+    @media (min-width:768px){
+
+    }
+  
     @media (min-width: 1200px) {
-      // display: flex;
+      display: flex;
     }
   }
 }
@@ -32,17 +36,15 @@
   }
 
   &__logo {
-    justify-content: center;
+    // justify-content: center;
+    // align-items:center ;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
     letter-spacing: 0.03em;
-
-    @media (min-width: 480px) {
-      font-size: 24px;
-      line-height: 1.16;
-    }
 
     @media (min-width: 768px) {
       font-size: 26px;

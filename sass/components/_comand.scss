@@ -20,32 +20,37 @@
   }
 
   &__list {
-    display: flex;
     list-style: none;
     padding-left: 0;
-    margin-bottom: 20px;
-
-    @media (min-width: 768px){
-      // flex-basis: calc((100% - 30px) / 2);
-    }
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: center;
+   
   }
 
   &__photos-block {
     display: block;
-    // width: 270px;
-    width: 100%;
     background-color: var(--white-color);
-    margin-right: 30px;
-    // margin-bottom: 0;
+    margin-bottom: 0;
     padding-left: 0;
-    margin-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
     }
 
-    @media (min-width: 768px){
-      flex-basis: calc((100% - 30px) / 2);
+    @media (min-width: 768px) {
+    display: block;  
+    flex-wrap: wrap;    
+    flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media (min-width:1200px){
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
     }
   }
 
