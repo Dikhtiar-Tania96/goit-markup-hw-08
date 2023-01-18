@@ -7,10 +7,15 @@
     align-items: baseline;
 
     @media (min-width: 768px) {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     @media (min-width: 1200px) {
       display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
     }
   }
 }
@@ -25,11 +30,15 @@
 
   @media (min-width: 768px) {
     display: flex;
+    margin-right: 165px;
   }
 
   @media (min-width: 1200px) {
-    display: block;
+    // display: block;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-right: 93px;
+
   }
 
   &__logo {
