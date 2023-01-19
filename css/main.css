@@ -492,6 +492,7 @@
   .images-block {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding: 0;
   }
 }
 .images-block__icon-block {
