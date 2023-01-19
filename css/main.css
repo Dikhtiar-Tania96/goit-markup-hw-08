@@ -80,11 +80,6 @@
     height: 80px;
   }
 }
-@media (min-width: 1200px) {
-  .header {
-    max-width: 1200px;
-  }
-}
 .header__navi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,12 +229,23 @@
 }
 @media (min-width: 1200px) {
   .contact {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 40px;
   }
 }
 .contact__link {
@@ -1044,6 +1050,8 @@
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1078,7 +1086,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-right: 93px;
+    margin-right: 70px;
   }
 }
 .footer-navi__logo {
@@ -1148,6 +1156,13 @@
   margin-bottom: 0;
   list-style: none;
   padding-left: 0;
+}
+@media (min-width: 1200px) {
+  .footer-contact__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .footer-contact__list > li {
   margin-bottom: 12px;
@@ -1264,6 +1279,9 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1288,9 +1306,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 .form-footer__icon {
@@ -1300,7 +1318,6 @@
 .form-footer__input {
   margin-bottom: 20px;
   padding: 15px 0 15px 16px;
-  width: 450px;
   width: 100%;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1313,7 +1330,8 @@
 }
 @media (min-width: 1200px) {
   .form-footer__input {
-    width: 358px;
+    max-width: 358px;
+    margin-right: 12px;
   }
 }
 .form-footer__input:hover, .form-footer__input:focus {

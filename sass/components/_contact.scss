@@ -12,8 +12,12 @@
   }
 
   @media (min-width:1200px){
-    align-items: baseline;
-    display: flex;
+   display: flex;
+   flex-direction: row;
+   display: inline-flex;
+   justify-content: center;
+   align-items: baseline;
+   gap: 40px;
     
   }
 
