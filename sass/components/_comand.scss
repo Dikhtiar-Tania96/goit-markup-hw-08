@@ -32,6 +32,10 @@
     flex-wrap: wrap;
     padding-left: 0;
     justify-content: center;
+
+    @media (min-width:1200px){
+      justify-content: space-between;
+    }
   }
 
   &__photos-block {
@@ -70,6 +74,8 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+
+
   }
 
   &__text {
