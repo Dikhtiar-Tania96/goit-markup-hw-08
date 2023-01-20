@@ -28,6 +28,7 @@
   flex-wrap: wrap;
   list-style: none;
   display: flex;
+  
 
   @media (min-width:1200px){
     flex-wrap: nowrap;
@@ -48,6 +49,7 @@
     width: 100%;
 
     @media (min-width:768px){
+      padding: 0;
       flex-basis: calc((100% - 30px) / 2);
     }
 
