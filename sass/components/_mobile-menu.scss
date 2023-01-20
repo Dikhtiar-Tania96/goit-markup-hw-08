@@ -55,6 +55,9 @@
     color: var(--title-color);
   }
 }
+.mobile-active{
+  color: var(--accent-color);
+}
 
 .menu-contact {
   margin-top: 306px;
@@ -104,7 +107,7 @@
     
     
     &:last-child{
-    border-right: none;
+    border: none;
     }
   }
 

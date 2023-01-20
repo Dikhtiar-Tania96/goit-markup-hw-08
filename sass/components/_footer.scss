@@ -100,6 +100,10 @@
     margin-bottom: 12px;
   }
 
+  &__list > li:last-child{
+    margin-bottom: 0;
+  }
+
   &__item :nth-last-child(1) {
     margin-bottom: 0;
   }
