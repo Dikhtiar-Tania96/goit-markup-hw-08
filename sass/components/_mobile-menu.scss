@@ -61,7 +61,7 @@
 }
 
 .menu-contact {
-  margin-top: 306px;
+  margin-top: auto;
   margin-bottom: 0;
   list-style: none;
 
@@ -72,22 +72,30 @@
   &__tel {
     font-family: Roboto;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--accent-color);
     margin-bottom: 32px;
     letter-spacing: 0.02em;
+
+    @media (min-width:480px){
+      font-size: 34px;
+    }
   }
 
   &__email {
     font-family: Roboto;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--text-color);
+
+    @media (min-width:480px){
+      font-size: 24px;
+    }
   }
 }
 
@@ -102,7 +110,8 @@
     text-decoration: none;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 13px;
+    // font-size: 18px;
     line-height: 1.2;
   }
 }

@@ -61,12 +61,6 @@
   }
 }
 
-.container-mobile {
-  width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 /*Header*/
 .header {
   height: 60px;
@@ -355,7 +349,7 @@
 }
 
 .menu-contact {
-  margin-top: 306px;
+  margin-top: auto;
   margin-bottom: 0;
   list-style: none;
 }
@@ -365,21 +359,31 @@
 .menu-contact__tel {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.17;
   text-decoration: none;
   color: var(--accent-color);
   margin-bottom: 32px;
   letter-spacing: 0.02em;
 }
+@media (min-width: 480px) {
+  .menu-contact__tel {
+    font-size: 34px;
+  }
+}
 .menu-contact__email {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--text-color);
+}
+@media (min-width: 480px) {
+  .menu-contact__email {
+    font-size: 24px;
+  }
 }
 
 .menu-socials {
@@ -395,7 +399,7 @@
   text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.2;
 }
 
@@ -409,14 +413,13 @@
 .section {
   background-color: var(--background-color-black);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-image.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
 }
 @media (min-width: 480px) {
   .section {
@@ -449,6 +452,7 @@
 @media (min-width: 769px) {
   .section {
     background-size: cover;
+    background-size: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
   }
@@ -465,7 +469,6 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
-  max-width: 696px;
   text-align: center;
   color: var(--white-color);
   font-family: Roboto, sans-serif;
@@ -894,6 +897,10 @@
   background-color: var(--accent-color);
 }
 
+img {
+  max-width: 100%;
+}
+
 .client {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1119,9 +1126,9 @@
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
 }
 
@@ -1278,6 +1285,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 60px;
 }
 @media (min-width: 480px) {
   .footer-socials {
@@ -1290,6 +1298,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
     margin-right: 94px;
+    margin-top: 0;
   }
 }
 
@@ -1360,6 +1369,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 0;
   }
 }
 
@@ -1410,6 +1420,7 @@
   .form-footer__input {
     min-width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .form-footer__input:hover, .form-footer__input:focus {
