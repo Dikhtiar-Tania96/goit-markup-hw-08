@@ -372,7 +372,7 @@
 .menu-contact__tel {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
   color: var(--accent-color);
@@ -387,7 +387,7 @@
 .menu-contact__email {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -412,7 +412,7 @@
   text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 1.2;
 }
 
@@ -1363,16 +1363,11 @@ img {
 
 .footer-input {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .footer-input {
@@ -1417,9 +1412,13 @@ img {
   margin-left: 10px;
 }
 .form-footer__input {
+  display: block;
   margin-bottom: 20px;
   padding: 15px 0 15px 16px;
+  max-width: 450px;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1440,9 +1439,9 @@ img {
   border-color: var(--accent-color);
 }
 .form-footer__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 10px 28px;
   width: 200px;
   height: 50px;

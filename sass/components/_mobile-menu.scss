@@ -53,6 +53,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    
   }
 }
 .mobile-active{
@@ -71,7 +72,7 @@
   &__tel {
     font-family: Roboto;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.17;
     text-decoration: none;
     color: var(--accent-color);
@@ -86,7 +87,7 @@
   &__email {
     font-family: Roboto;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -109,7 +110,7 @@
     text-decoration: none;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 10px;
     // font-size: 18px;
     line-height: 1.2;
   }

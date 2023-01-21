@@ -1,8 +1,8 @@
 .footer-input{
   margin-top: 60px;
-  display: flex;
+  // display: block;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 
   @media (min-width:1200px){
     display: inline-flex;
@@ -30,9 +30,13 @@
   }
 
   &__input {
+    display: block;
     margin-bottom: 20px;
     padding: 15px 0 15px 16px;
+    max-width: 450px;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -54,7 +58,7 @@
   }
 
   &__button {
-    display: flex;
+    display: inline-flex;
     padding: 10px 28px;
     width: 200px;
     height: 50px;
