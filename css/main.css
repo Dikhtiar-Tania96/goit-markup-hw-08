@@ -1634,7 +1634,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
-@media (min-width: 480px) {
+@media (min-width: 1200px) {
   .form-field__active {
     font-size: 14px;
   }
@@ -1703,7 +1703,7 @@ img {
 }
 @media (min-width: 480px) {
   .form__button {
-    margin-left: 100px;
+    margin-left: 85px;
   }
 }
 @media (min-width: 768px) {
@@ -1725,7 +1725,7 @@ img {
   letter-spacing: 0.03em;
   line-height: 1.16;
 }
-@media (min-width: 480px) {
+@media (min-width: 1200px) {
   .form-field-checkbox-active {
     font-size: 14px;
   }
