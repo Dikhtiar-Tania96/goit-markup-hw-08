@@ -1539,7 +1539,7 @@ img {
 }
 .modal__title {
   color: var(--title-color);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
   font-family: Roboto;
   line-height: 1.15;
@@ -1547,6 +1547,11 @@ img {
   letter-spacing: 0 0.03;
   margin-top: 0;
   margin-bottom: 12px;
+}
+@media (min-width: 480px) {
+  .modal__title {
+    font-size: 20px;
+  }
 }
 .modal__button-close {
   position: absolute;
