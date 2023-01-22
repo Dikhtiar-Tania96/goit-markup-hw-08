@@ -467,7 +467,6 @@
   .section {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: cover;
     background-size: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
@@ -1523,7 +1522,7 @@ img {
   border-radius: 4px;
   position: relative;
   width: 280px;
-  height: 609px;
+  height: min(100%, 609px);
   background-color: rgb(255, 255, 255);
   padding: 40px;
   overflow-y: auto;
